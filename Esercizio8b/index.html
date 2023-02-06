@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+    <title>Quiz</title>
+</head>
+
+<!-- "Reset" al caricamento della pagina -->
+    <body onload="prossima(0)">
+
+        <main>
+            <!-- Punteggio finale -->
+            <div class="box-risultato" id="punteggio">
+    
+                <div class="container">
+    
+                    <h1>Quiz completed!</h1>
+    
+                    <div class="dettagli">
+                       
+                        <p>Wrong Answers : <span id="risposte-errate"></span></p>
+                        <p>Right Answers : <span id="risposte-giuste"></span></p>
+                        
+                    </div>
+    
+                    <div class="btn-container">
+                        <button onclick="chiudiPunteggio()">Continue</button>
+                    </div>
+    
+                </div>
+            </div>
+
+             <!-- Quiz-->
+    
+            <div class="container-principale-quiz">
+
+             <!-- Area con punteggio e numero domanda in aggiornamento-->
+
+                <div class="container-dettagli-quiz">
+                    <h1>Score : <span id="punteggio-attuale"></span> / 10</h1>
+                    <h1> Question Number:  <span id="domanda-attuale"></span> / 10</h1>
+                </div>
+      <!-- Area contenente il testo della domanda-->
+                <div class="container-domande-quiz">
+                    <h1 id="display"></h1>
+                </div>
+    <!-- Area contenente le 4 risposte-->
+                <div class="container-scelta-quiz">
+
+    <!-- Box che si apre se l'utente non seleziona nessuna opzione-->
+                   <div class="box-risultato" id="option-mode">
+                    <div class="container">
+                        <h1>Please Pick An Option</h1>
+                             <div class="btn-container">
+                                <button onclick="gestioneChiusura()">Continue</button>
+                            </div>
+                        </div>
+                   </div>
+
+    <!-- Input radio per effettuare la scelta della risposta tra le quattro opzioni disponibili-->
+                    <span>
+                        <input type="radio" id="uno" name="option" class="radio" value="optionA" />
+                        <label for="uno" class="option" id="scelta-uno"></label>
+                    </span>
+    
+    
+                    <span>
+                        <input type="radio" id="due" name="option" class="radio" value="optionB" />
+                        <label for="due" class="option" id="scelta-due"></label>
+                    </span>
+    
+    
+                    <span>
+                        <input type="radio" id="tre" name="option" class="radio" value="optionC" />
+                        <label for="tre" class="option" id="scelta-tre"></label>
+                    </span>
+    
+    
+                    <span>
+                        <input type="radio" id="quattro" name="option" class="radio" value="optionD" />
+                        <label for="quattro" class="option" id="scelta-quattro"></label>
+                    </span>
+                </div>
+
+    <!-- Pulsante per la passare alla domanda successiva-->
+                <div class="btn-prossima">
+                    <button onclick="gestioneProssimaDomanda()">Next Question</button>
+                </div>
+            </div>
+        </main>
+</body>
+</html>

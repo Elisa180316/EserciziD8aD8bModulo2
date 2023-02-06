@@ -1,0 +1,229 @@
+/* Generali */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+body{
+    font-family: 'Montserrat', serif;
+
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 7, 108);
+    
+}
+
+
+/* Box del quiz */
+
+.container-principale-quiz{
+    width: 40rem;
+    height: 30rem;
+    background-color: rgb(236, 225, 232);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+}
+
+/* Area con punteggio e numero domanda in aggiornamento*/
+
+.container-dettagli-quiz{
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* H1 Area con punteggio e numero domanda in aggiornamento*/
+.container-dettagli-quiz h1{
+    font-size: 1.3rem;
+}
+
+/* Area contenente il testo della domanda*/
+.container-domande-quiz{
+    width: 80%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid darkgray;
+    border-radius: 15px;
+}
+
+/* H1 Area contenente il testo della domanda*/
+.container-domande-quiz h1{
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 3px;
+}
+
+/* Area contenente le 4 risposte*/
+.container-scelta-quiz{
+    width: 80%;
+    height: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Span Area contenente le 4 risposte*/
+.container-scelta-quiz span{
+    width: 45%;
+    height: 3rem;
+    border: 5px solid darkgray;
+    border-radius: 15px;
+    overflow: hidden;
+  
+}
+
+/* Span testo Area contenente le 4 risposte*/
+span label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-weight: 600;
+}
+
+/* Span testo Area contenente le 4 risposte che diventa bianco al passaggio del mouse*/
+span label:hover{
+    color: white;
+}
+
+/* Posizionamento di input radio*/
+input[type="radio"] {
+    position: relative;
+    display: none;
+}
+
+/* Modifica colore sfondo al click di scelta opzione*/
+input[type=radio]:checked ~ .option {
+    background: rgb(150, 130, 231);
+}
+
+/* Next Question button*/
+.btn-prossima {
+    width: 50%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.btn-prossima button {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 4px;
+    color: rgb(25, 25, 25);
+    font-weight: 600;
+    border: 3px solid gray;
+    cursor: pointer;
+}
+/* Modifica colore sfondo al passaggio del mouse*/
+.btn-prossima button:hover {
+    background-color: rgb(196, 183, 218);
+}
+
+/*Box che si apre se l'utente non seleziona nessuna opzione*/
+.box-risultato{
+    display: none;/*Per nasconderlo quando non deve attivarsi*/
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+/*Box con risultati finali*/
+.container{
+    height: 20rem;
+    width: 21rem;
+    background-color: rgb(16 17 150);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+}
+
+/*Testo "Quiz completed" Box con risultati finali*/
+.container h1{
+    font-size: 1.3rem;
+    height: 3rem;
+    color: lightgray;
+    text-align: center;
+}
+
+/*Area "Wrong/right answers" Box con risultati finali*/
+.dettagli{
+    width: 15rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/*Testo "Wrong/right answers" Box con risultati finali*/
+.dettagli p{
+    color: white;
+    text-align: center;
+}
+
+/*Area Bottone "Continue" Box con risultati finali*/
+.btn-container{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Bottone e testo "Continue" Box con risultati finali*/
+.btn-container button{
+    width: 10rem;
+    height: 2rem;
+    background: none;
+    border: 1px solid rgb(252, 242, 241);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* Modifica colore sfondo al passaggio del mouse*/
+.btn-container button:hover{
+    background-color: rgb(24, 154, 225);
+}
+
+
+
+
+
+ 
