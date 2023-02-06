@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    
+      <!--  1) Assegna un titolo per questa pagina--> 
+      <title>Frittate</title>
+      
+</head>
+<body>
+ 
+    <!-- 2) Crea un tag h1 con il contenuto che preferisci-->
+    <h1 onclick="changeTitle">Ricette per frittate</h1>
+
+ <!--3) Crea una lista ordinata con alcuni elementi al suo interno-->
+ <h3>Ingredienti principali:</h3>
+    <ol>
+        <li>6 Uova</li>
+        <li>Un pizzico di sale</li>
+        <li>Pepe q.b.</li>
+      </ol>
+      <div id="flex-container">
+<!--4) Crea una tabella con 4 righe e 5 colonne-->
+
+
+    <table id = "myTable">
+      <!--43) Crea un bottone che una volta cliccato nasconde o mostra la tabella nella pagina//
+      <input type=”button” value=”Mostra” onclick="vedi()" />
+<input type=”button” value=”Nascondi” onclick="nonVedi()"/>-->
+      
+        <tr>
+            <!--7) Unisci insieme 2 celle della tabella-->
+          <td colspan ="2" class="variante"> Variante 1</td>
+          <!--5) Aggiungi un'immagine a ogni seconda cella di ogni riga-->
+          <td><img src="https://tse3.mm.bing.net/th?id=OIP.tILjto1QIxzX8q3-rADqPgHaE7&pid=Api&P=0" width="170px" height="190px"/></td>
+          
+          <td>Uova</td>
+          <td>Sale</td>
+          <td>Pepe</td>
+        </tr>
+        <!--6) Aggiungi un tag <a> ad ogni immagine (Inserito fuori da img perchè dopo chiedeva di cambiare colore e bordo- se inserito nell'img la sintassi è:<a href="https://ricette.giallozafferano.it/Frittata.html" target="_blank"> 
+   <img src="https://tse3.mm.bing.net/th?id=OIP.tILjto1QIxzX8q3-rADqPgHaE7&pid=Api&P=0" width="170px" height="190px"/> 
+</a>)-->
+        <td ><a class="ricetta" id = "prima"href="https://ricette.giallozafferano.it/Frittata.html" target="_blank">Ricetta</a></td>
+   
+        <tr>
+          <td class="variante">Variante 2</td>
+           <!--5) Aggiungi un'immagine a ogni seconda cella di ogni riga-->
+          <td><img src="https://tse2.mm.bing.net/th?id=OIP.1eBsLYwtEKM3rFur6UGuzAHaEo&pid=Api&P=0" width="180px" height="170px"/></td>
+          <td>Uova</td>
+          <td>Zucchine</td>
+          <td>Sale</td>
+
+        </tr>
+        <!--6) Aggiungi un tag <a> ad ogni immagine-->
+        <td><a href="https://ricette.giallozafferano.it/Frittata-di-zucchine.html" target="_blank">Ricetta</a></td>
+        
+        <tr>
+            <td class="variante">Variante 3</td>
+             <!--5) Aggiungi un'immagine a ogni seconda cella di ogni riga-->
+            <td><img src="https://tse3.mm.bing.net/th?id=OIP.oQDUcoJN36PNA-eR7wwNPwHaLH&pid=Api&P=0" width="170px" height="170px"/></td>
+            <td>Uova</td>
+            <td>Bacon</td>
+            <td>Pepe</td>
+          </tr>
+          <!--6) Aggiungi un tag <a> ad ogni immagine-->
+          <td><a href="https://www.giallozafferano.it/ricerca-ricette/frittata+con+bacon/" target="_blank">Ricetta</a></td>
+          <tr>
+            <td class="variante">Variante 4</td>
+             <!--5) Aggiungi un'immagine a ogni seconda cella di ogni riga-->
+          <td><img src="https://tse1.mm.bing.net/th?id=OIP.VjQz8EQJcGvMcFWN6l2hvwHaFF&pid=Api&P=0" width="170px" height="170px"/></td>
+          <td>Uova</td>
+          <td>Salsiccia</td>
+          <td>Pepe</td>
+          </tr>
+          <!--47) Aggiungi un bottone che una volta cliccato elimini un <td> a caso nella tabella-->
+          <!--<button>Elimina TD Random</button>-->
+
+          <!--6) Aggiungi un tag <a> ad ogni immagine-->
+          <td><a href="https://www.gustissimo.it/ricette/frittate-omelette-crepes/frittata-con-salsiccia.htm"target="_blank">Ricetta</a></td>
+      </table>
+    </div>
+
+    <br>
+    <br>
+    <!--8) Dividi la pagina inserendo una riga orizzontale-->
+    <hr>
+    <!-- 42)Crea un bottone che una volta cliccato nasconde ogni immagine nella pagina
+    <button id="nascondiImg">Nascondi Immagini</button>-->
+    <!--9) Crea un elemento contenitore con al suo interno un paragrafo e una lista non ordinata-->
+    <div id="container">
+        <p> Se vi manca un po' di fantasia in cucina, vi lascio qui sotto alcuni suggerimenti sugli ingredienti da poter aggiungere alle vostre frittate!</p>
+        <ul id ="secondList">
+            <li>Formaggio</li>
+            <li>Prosciutto crudo o cotto</li>
+            <li>Pasta o riso</li>
+            <li>Funghi e spezie aromatiche</li>
+        </ul>
+    </div>
+    <!--10) Crea un footer contenente alcune informazioni sul creatore della pagina-->
+    <footer>
+        <h5>Creato da Elisa Fambrini</h5>
+<h5>E.mail:elisa.fambrini@yahoo.it</h5>
+<h5>Ultimo aggiornamento: 5 Febbraio 2023<h5>
+
+    </footer>
+    <h6 class="nascosto">Hidden</h6>
+    <!--49) Scrivi una funzione per creare una tabella con 4 righe e 3 colonne e aggiungerla alla fine della pagina
+      <button id ="myButton">Crea tabella</button>
+      <button id ="removeButton">Cancella tabella</button>-->
+    
+<script>
+  //31) Seleziona l'elemento con id "container" nella pagina//
+  //var v = document.getElementById("container");// Creo un variabile v e seleziono l'elemento con id container//
+  //console.log(v)
+ 
+  //32) Seleziona tutti gli elementi di tipo <td> nella pagina//
+
+
+   //var td = document.querySelectorAll('td')//Creo un variabile td e seleziono tutti i td//
+    //console.log(td)
+
+
+//33) Usa un ciclo per stampare in console il testo contenuto in ogni elemento <td> nella pagina//
+  
+
+//let tableRows = document.querySelectorAll("tr");// Sekeziono le righe della tabella
+
+// Ciclo for che itera le righe della tabella
+//for (let i = 0; i < tableRows.length; i++) {
+  //let row = tableRows[i];
+  //let cells = row.querySelectorAll("td");
+
+  // Ciclo for che itera le celle della tabella
+  //for (let j = 0; j < cells.length; j++) {
+   // let cell = cells[j];
+   // console.log(cell.textContent);
+  //}
+//}
+  //34) Scrivi una funzione per cambiare il titolo della pagina//
+
+  //const changeTitle = function (newTitle) { // Creo una funzione con parametro newTitle
+      //  const title = document.querySelector('h1') // Seleziono il tag h1
+      //  title.innerText = newTitle //Modifico il titolo
+      //}
+      //changeTitle('Magnifiche ricette') //stampo il testo modificato
+
+      //35) Scrivi una funzione per aggiungere una nuova riga alla tabella nella pagina//
+
+      //const tbodyRef = document.getElementById('myTable').getElementsByTagName('tbody')[0]; //Creo una costante e seleziono l'elemento id myTable e l'elemento tbody con indice 0//
+//const newRow = tbodyRef.insertRow(); // Creo una costante per la nuova riga//
+//const newCell = newRow.insertCell(); // Creo una costante per la nuova cella della riga creata sopra//
+//const newText = document.createTextNode('New row');//Creo il testo da inserire nell'elemento creato
+//newCell.appendChild(newText); //aggiunge un elemento alla fine dell'elenco dei figli della tabella padre//
+
+
+//36) Scrivi una funzione per aggiungere la classe "test" ad ogni riga nella tabella//
+
+//const addClassToTr = function () { //Creo una funzione con nessun parametro//
+   //   const title = document.querySelector('tr')//Seleziono il tr//
+    //   title.classList.remove('variante')//Rimuovo la classe precedente//
+    //   title.classList.add('test')//Aggiungo la nuova classe//
+    //  }
+   //   addClassToTr()//Richiamo la funzione creata//
+
+//37) Scrivi una funzione per aggiungere uno sfondo rosso a ogni link presente nella pagina//
+
+//const paintItRed = function () { //Creo una funzione con 0 parametri//
+       // let xs = document.querySelectorAll("a") //Dichiaro una variabile selezionando i tag a//
+         //   for(let i = 0; i < xs.length; i++) { //Con ciclo for itero le istruzioni che seguono//
+           //     let a = xs[i] 
+             //   a.style.background = "red"
+            //}
+          //}
+          //paintItRed()//Richiamo la funzione creata//
+
+//38) Mostra in console "Page loaded" quando la pagina ha finito di caricarsi//
+
+//window.onload = function () {
+      //alert("Page loaded!")
+    //}
+
+    //39) Scrivi una funzione per aggiungere nuovi elementi alla lista non ordinata nella pagina//
+//Primo elemento//
+//var node = document.createElement('li'); //creo un tag <li> con createElement()//
+//node.appendChild(document.createTextNode('Wurstel'));//Lo aggiungo alla UL con Node.appendChild()//
+//document.querySelector('ul').appendChild(node);//aggiunge un elemento alla fine dell'elenco dei figli della ul padre//
+
+//Secondo elemento//
+//var node = document.createElement('li');
+//node.appendChild(document.createTextNode('Philadelphia'));
+//document.querySelector('ul').appendChild(node);
+
+//40) Scrivi una funzione per svuotare una lista nella pagina//
+
+  //const deleteLast = function () {
+        //const ul = document.querySelectorAll('ul')[0] //Seleziono la lista scelta (tag UL)
+        
+       //ul.remove() //Rimuovo il tag UL con remove()
+      //}
+      //deleteLast();
+
+     // 41) Aggiungi un event listener in modo che compaia un alert quando il cursore passa sopra un link; l'alert deve mostrare la sua proprietà href//
+
+      
+//let links = document.querySelectorAll("a");// Seleziono i tag a
+
+// Ciclo for che itera i link (a)
+//for (let i = 0; i < links.length; i++) {
+ // let link = links[i];
+
+  // Aggiungo event listener
+ // link.addEventListener("mouseover", function() {
+  //  alert(link.href);
+  //});
+//}
+
+     //42) Crea un bottone che una volta cliccato nasconde ogni immagine nella pagina//
+
+     //document.getElementById("nascondiImg").addEventListener("click", function() { // Seleziono il button con Id ed aggiungo event listener al click//
+    //var images = document.getElementsByTagName("img"); //Seleziono i tag img
+    //for (var i = 0; i < images.length; i++) { //Ciclo for che itera nella la variabile//
+    //  images[i].style.display = "none"; //Indico di nascondere//
+    //}
+ // });
+
+//43) Crea un bottone che una volta cliccato nasconde o mostra la tabella nella pagina//
+//Come sopra//
+//function vedi() {
+//document.getElementById("myTable").style.display="block";
+//}
+
+//function nonVedi() {
+//document.getElementById("myTable").style.display="none";
+//}
+
+//45)Cancella l'ultima lettera dal titolo della pagina ogni volta che l'utente ci clicca sopra//
+
+//document.addEventListener("click", function() { 
+  //let h1 = document.querySelector("h1"); 
+  //if (h1.textContent.length > 0) { 
+   // h1.textContent = h1.textContent.slice(0, h1.textContent.length - 1);
+  //}
+//});
+
+// 46)Aggiungi un event listener in modo che cliccando un <td> nella pagina, questo cambi colore di sfondo//
+
+// Seleziono i tag td
+// let tdElements = document.querySelectorAll("td");
+
+// Ciclo for che itera i tag td
+//for (let i = 0; i < tdElements.length; i++) {
+  //let td = tdElements[i];
+
+  // Aggiungo event listener
+  //td.addEventListener("click", function() {
+   // td.style.backgroundColor = "lightblue";
+  //});
+//}
+
+// 47) Aggiungi un bottone che una volta cliccato elimini un <td> a caso nella tabella//
+
+  // Seleziono il button ed i td
+//let button = document.querySelector("button");
+//let tdElement = document.querySelectorAll("td");
+
+// Aggiungo event listener al button
+//button.addEventListener("click", function() {
+//if (tdElement.length > 0) {
+    // Dichiaro una variabile per la ricerca random
+    //let index = Math.floor(Math.random() * tdElement.length);
+
+    // Inserisco i tag td nella ricerca random
+   //let td = tdElement[index];
+
+    // Rimuovo i tag td dalla tabella
+    //td.remove();
+  //}
+//});
+
+//48) Aggiungi automaticamente un bordo rosa ad una cella della tabella quando il cursore ci passa sopra//
+
+// Seleziono i tag td
+//let tdElement = document.querySelectorAll("td");
+
+// Aggiungo event listener ai tag td
+
+//tdElement.forEach(function(td) {
+  //td.addEventListener("mouseover", function() {
+   // td.style.border = "3px solid pink";
+  //});
+  //td.addEventListener("mouseout", function() {
+    //td.style.border = "";
+  //});
+//});
+
+//49) Scrivi una funzione per creare una tabella con 4 righe e 3 colonne e aggiungerla alla fine della pagina//
+
+function createTable() {
+  // Creo una variabile per l'elemento tabella
+  var table = document.createElement("table");
+  
+  // Creo 4 righe
+  for (var i = 0; i < 4; i++) {
+    var row = document.createElement("tr");
+    
+    // Creo 3 colonne
+    for (var j = 0; j < 3; j++) {
+      var col = document.createElement("td");
+      row.appendChild(col);
+    }
+    
+    table.appendChild(row);
+  }
+  
+  // Inserisco la tabella in fondo alla pagina HTML
+  document.body.appendChild(table);
+}
+// Creo un avent listener ad un button per creare la tabella//
+var button = document.getElementById("myButton");
+button.addEventListener("click", createTable)
+
+//50) Scrivi una funzione per rimuovere l'ultima tabella presente nella pagina//
+
+function removeTable(){
+  var table = document.getElementsByTagName("table")[-1]
+  var parent = table.parentNode;
+  parent.removeChild(table);
+}
+var button = document.getElementById("removeButton")
+button.addEventListener("click", removeTable)
+</script>
+
+
+    
+</body>
+</html>

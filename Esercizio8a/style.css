@@ -1,0 +1,122 @@
+body {
+    max-width: 90%; /* 11) Assegna una larghezza massima al tag body e centralo nella pagina*/
+    margin-left: 77px; /* 11) Assegna una larghezza massima al tag body e centralo nella pagina*/
+    background-color: azure;
+}
+
+/* Intestazione */
+
+h1 {
+    text-align: center; /*12) Centra ogni tag h1*/
+    color: rgb(128, 24, 224);
+    background-color: rgb(223, 189, 143);
+}
+
+h3, ol {
+    margin-left: 83px;
+}
+
+/* Main */
+#flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 115px;
+    justify-content: space-around;
+    width: 200vh;
+}
+
+table {
+    width: 80%;
+    background-color: rgb(199, 208, 185);
+    margin-left: -140px;
+    border-radius: 25px;/* 15) Fai in modo che la i bordi della tabella che hai creato siano arrotondati*/
+    border-collapse: collapse;/*20) Aggiungi un bordo puntato rosso a ogni <tr> (nota: <tr> non accetta una proprietà "border")*/
+}
+
+img {
+    object-fit: contain;
+    margin-left: 45px;
+
+}
+
+
+td {
+    width: 10%;
+    /*19) Aggiungi un bordo verde a ogni <td>*/
+    border: 2px solid green;
+    
+}
+
+
+/*20) Aggiungi un bordo puntato rosso a ogni <tr> (nota: <tr> non accetta una proprietà "border")
+tr {
+    border-bottom: 1px dotted red;
+    
+}*/
+
+/*17) Crea una classe che una volta assegnata cambi la dimensione e il peso del font */
+.variante {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#prima {
+    margin-left: 110px;
+}
+.ricetta,/*14) Crea una classe e assegnale un bordo*/
+a {
+    font-weight: bold;
+    color: rgb(202, 87, 10);/*13) Cambia il colore di ogni link nella pagina*/
+    margin-left: 61%;
+    margin-top: 20px;
+    text-decoration: none;
+    border: 3px solid red; /*14) Crea una classe e assegnale un bordo*/
+    border-radius: 5px;
+    padding: 3px;
+}
+
+hr {
+    margin-top: 710px;
+}
+
+#container {
+    width: 85%;
+    height: 154px;
+    background-color: rgb(229, 139, 218);
+    margin-left: 60px;
+    border-radius: 15px;
+}
+
+p {
+    text-align: center;
+    padding: 10px;
+    margin: 2px;/*16) Aggiungi un margine ad ogni paragrafo*/
+}
+
+ol {
+    padding: 10px;
+}
+
+footer {
+    width: 85%;
+    height: 49px;
+    background-color: rgb(206, 238, 89);
+    margin-left: 60px;
+    border-radius: 15px;
+
+}
+
+footer,
+h5 {
+    display: flex;
+    justify-content: space-around;
+
+}
+/*18) Crea una classe per nascondere un elemento Inserita e nascosta parola "hidden"*/
+.nascosto {
+    display: none;
+}
+
+.test {
+    background-color: blue;
+}
